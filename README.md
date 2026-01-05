@@ -72,8 +72,8 @@ Update ```src/main/resources/application.properties:```
 
 ```declarative
 spring.application.name=project
-spring.datasource.url=jdbc:postgresql://<SUPABASE_HOST>:5432/<DATABASE_NAME>
-spring.datasource.username=<DATABASE_USER>
+spring.datasource.url=${DATABASE_URL}
+spring.datasource.username=${DATABASE_USERNAME}
 spring.datasource.password=<DATABASE_PASSWORD>
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=update
